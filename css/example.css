@@ -1,0 +1,38 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    display: grid;
+    z-index: 4;
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    background: black;
+    grid-template-columns: 1fr 99px 99px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navitems {
+    height: auto;
+    width: 80px;
+    /* background-color: green; */
+    text-align: center;
+}
+
+.navitems a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    transition: .4s;
+}
+
+.navitems a.active,
+.navbaritems a:hover {
+    color: rgb(0, 0, 0);
+    background: white;
+    border-radius: 2px;
+}
